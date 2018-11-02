@@ -13,18 +13,19 @@ yi = np.array([
 
 
 # Letra a:
-#Curves.dispersao(xi, yi, xString="Ano", yString="População (Milhões de Hab.)")
+Curves.dispersao(xi, yi, xString="Ano", yString="População (Milhões de Hab.)")
 
 # Letra b:
-#Curves.quadratic(xi, yi, 2)
+Curves.polinomial(xi, yi, 2)
 
 # Letra c
-#Curves.exponencial(xi, yi)
+Curves.exponencial(xi, yi)
 
 # Letra d
+# aguardando resposta
 
 # Letra e
 xPrev = np.array([2000, 2005, 2014])
 yValue = np.array([169.8, 184.2, 202.7])
-#Curves.quadraticPrevision(xi, yi, 2, xPrev, yValue)
-Curves.exponencialPrevision(xi, yi, xPrev, yValue)
+Curves.previsaoPolinomial(xi, yi, 2, xPrev, yValue)
+Curves.previsaoExponencial(xi, yi, xPrev, yValue)

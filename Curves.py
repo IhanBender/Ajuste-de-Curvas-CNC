@@ -13,7 +13,7 @@ def dispersao(xi, yi, xString='x', yString='y'):
     plt.plot(xi, yi, 'bo', label="Diagrama de Dispersão")
     plt.show()
 
-def quadratic(xi, yi, degree):
+def polinomial(xi, yi, degree):
     if len(xi) != len(yi):
         raise NameError('Listas de valores com tamanhos diferentes') 
 
@@ -45,7 +45,7 @@ def exponencial(xi, yi):
     plt.show()
 
 # Quadratico tem graus como parametro
-def quadraticPrevision(xi, yi, degree, xPrev, yPrev):
+def previsaoPolinomial(xi, yi, degree, xPrev, yPrev):
     if len(xi) != len(yi):
         raise NameError('Listas de valores com tamanhos diferentes') 
 
@@ -69,7 +69,7 @@ def quadraticPrevision(xi, yi, degree, xPrev, yPrev):
     plt.show()
 
 
-def exponencialPrevision(xi, yi, xPrev, yPrev):
+def previsaoExponencial(xi, yi, xPrev, yPrev):
     if len(xi) != len(yi):
         raise NameError('Listas de valores com tamanhos diferentes')
 
