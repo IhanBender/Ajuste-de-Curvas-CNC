@@ -16,13 +16,20 @@ yi = np.array([
 Curves.dispersao(xi, yi, xString="Ano", yString="População (Milhões de Hab.)")
 
 # Letra b:
-Curves.polinomial(xi, yi, 2)
+r1 = Curves.polinomial(xi, yi, 2)
 
 # Letra c
-Curves.exponencial(xi, yi)
+r2 = Curves.exponencial(xi, yi)
 
 # Letra d
-# aguardando resposta
+v1 = Curves.variancia(r1, xi)
+v2 = Curves.variancia(r2, xi)
+if v1 > v2:
+    print("Grau 2")
+    Curves.polinomial(xi, yi, 2)
+else:
+    print("Exponencial")
+    Curves.exponencial(xi, yi)
 
 # Letra e
 xPrev = np.array([2000, 2005, 2014])
